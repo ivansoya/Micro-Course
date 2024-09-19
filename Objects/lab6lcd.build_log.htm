@@ -1,0 +1,128 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.29.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: stud user, SUAI, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.29.0.0
+Toolchain Path:  C:\Program Files\Keil\MDK-ARM-v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.29.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.36.5.0
+ 
+<h2>Project:</h2>
+Y:\Ñòóäåíòû\4836\Ñîÿ\PVP\lab6lcd\lab6lcd.uvprojx
+Project File Date:  12/17/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Program Files\Keil\MDK-ARM-v5\ARM\ARMCC\Bin'
+Build target 'labLCD'
+compiling main.c...
+user\main.c(93): warning:  #223-D: function "LCDprintChar" declared implicitly
+          LCDprintChar(printStartText[v], 110, x, LCD_COLOR_WHITE ,LCD_COLOR_BLACK, 1);
+user\main.c(114): warning:  #223-D: function "LCDprintChar" declared implicitly
+          LCDprintChar(printGameOver[v], 110, x, LCD_COLOR_WHITE ,LCD_COLOR_BLACK, 1);
+user\main.c(60): warning:  #177-D: variable "i"  was declared but never referenced
+  	uint32_t i;
+user\main.c(66): warning:  #177-D: variable "tname"  was declared but never referenced
+      Ttypename tname; // Ð¾Ð±ÑŠÐµÐºÑ‚ ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ñ‹
+user\main.c(76): warning:  #177-D: variable "FSMstate"  was declared but never referenced
+  	enum Tstate FSMstate=NOinit;
+user\main.c(125): warning:  #223-D: function "lcd_draw_picture" declared implicitly
+              lcd_draw_picture(egg->posX, egg->posY, eggSize[0], eggSize[1], leftEggFrames[egg->frame]);
+user\main.c(149): warning:  #223-D: function "lcd_draw_picture_by_coords" declared implicitly
+      lcd_draw_picture_by_coords(canvasLeftPos[0], canvasLeftPos[1], leftCanvasSize, staticLeftCanvas);
+user\main.c(159): warning:  #223-D: function "lcd_draw_mirror_picture_by_coords" declared implicitly
+              lcd_draw_mirror_picture_by_coords(wolfLeftPos[0], wolfLeftPos[1], upWolfSize, wolfLeftUp);
+user\main.c(169): warning:  #223-D: function "LCDprintChar" declared implicitly
+          LCDprintChar(charList[v], 220, x, LCD_COLOR_WHITE ,LCD_COLOR_BLACK, 1);
+user\main.c(176): warning:  #223-D: function "LCDprintChar" declared implicitly
+          LCDprintChar(scoreText[i], 220, x + i * 8, LCD_COLOR_WHITE ,LCD_COLOR_BLACK, 1);
+user\main.c(179): warning:  #223-D: function "LCDprintChar" declared implicitly
+      LCDprintChar((char)((lifes % 10) + (int)'0'), 220, 240, LCD_COLOR_WHITE ,LCD_COLOR_BLACK, 1);
+user\main.c: 11 warnings, 0 errors
+linking...
+Program Size: Code=9098 RO-data=1978 RW-data=18068 ZI-data=11972  
+".\Objects\lab6lcd.axf" - 0 Error(s), 11 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM.CMSIS.5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F3xx_DFP.2.1.0.pack
+                Keil.STM32F3xx_DFP.2.1.0
+                STMicroelectronics STM32F3 Series Device Support and Examples
+   * Component: COMMON Version: 1.9.0
+   * Component: DMA Version: 1.9.0
+   * Component: GPIO Version: 1.9.0
+   * Component: I2C Version: 1.9.0
+   * Component: PWR Version: 1.9.0
+   * Component: RCC Version: 1.9.0
+   * Component: USART Version: 1.9.0
+   * Component: UTILS Version: 1.9.0
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_labLCD
+  C:\Program Files\Keil\MDK-ARM-v5-Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  C:\Program Files\Keil\MDK-ARM-v5-Packs\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include
+  C:\Program Files\Keil\MDK-ARM-v5-Packs\Keil\STM32F3xx_DFP\2.1.0\Drivers\STM32F3xx_HAL_Driver\Inc
+  C:\Program Files\Keil\MDK-ARM-v5-Packs\Keil\STM32F3xx_DFP\2.1.0\Drivers\STM32F3xx_HAL_Driver\Inc\Legacy
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+
+   * Component: Keil.Standalone::Device:STM32Cube LL:COMMON:1.9.0
+      Source file:   MDK\Templates_LL\Src\stm32f3xx_it.c
+      Include file:  MDK\Templates_LL\Inc\stm32f3xx_it.h
+      Source file:   MDK\Driver\stm32f3xx_ll.c
+      Source file:   MDK\Templates_LL\Src\main.c
+      Include file:  MDK\Templates_LL\Inc\stm32_assert.h
+      Include file:  MDK\Templates_LL\Inc\main.h
+
+   * Component: Keil.Standalone::Device:STM32Cube LL:DMA:1.9.0
+      Source file:   Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_ll_dma.c
+
+   * Component: Keil.Standalone::Device:STM32Cube LL:GPIO:1.9.0
+      Source file:   Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_ll_gpio.c
+
+   * Component: Keil.Standalone::Device:STM32Cube LL:I2C:1.9.0
+      Source file:   Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_ll_i2c.c
+
+   * Component: Keil.Standalone::Device:STM32Cube LL:PWR:1.9.0
+      Source file:   Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_ll_pwr.c
+
+   * Component: Keil.Standalone::Device:STM32Cube LL:RCC:1.9.0
+      Source file:   Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_ll_rcc.c
+
+   * Component: Keil.Standalone::Device:STM32Cube LL:USART:1.9.0
+      Source file:   Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_ll_usart.c
+
+   * Component: Keil.Standalone::Device:STM32Cube LL:UTILS:1.9.0
+      Source file:   Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_ll_utils.c
+
+   * Component: Keil.Standalone::Device:Startup:1.0.0
+      Source file:   MDK\Device\Source\ARM\STM32F3xx_OPT.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F3xx\Source\Templates\arm\startup_stm32f303xc.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F3xx\Source\Templates\system_stm32f3xx.c
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

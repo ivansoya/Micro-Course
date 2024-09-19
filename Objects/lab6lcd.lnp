@@ -1,0 +1,20 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\asciilib.o"
+".\objects\lcd_ili9325.o"
+".\objects\main.o"
+".\objects\frames.o"
+".\objects\game.o"
+".\objects\stm32f3xx_ll_dma.o"
+".\objects\stm32f3xx_ll_gpio.o"
+".\objects\stm32f3xx_ll_i2c.o"
+".\objects\stm32f3xx_ll_pwr.o"
+".\objects\stm32f3xx_ll_rcc.o"
+".\objects\stm32f3xx_ll_usart.o"
+".\objects\stm32f3xx_ll_utils.o"
+".\objects\stm32f3xx_ll.o"
+".\objects\startup_stm32f303xc.o"
+".\objects\system_stm32f3xx.o"
+--strict --scatter ".\Objects\lab6lcd.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\lab6lcd.map" -o .\Objects\lab6lcd.axf
